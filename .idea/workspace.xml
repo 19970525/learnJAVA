@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a27a0c09-9e0a-4d2b-85c6-4cbcc1597c6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/A_diarys/习惯日记（会经常删）.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_notes/Spring.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_tool/toolDownLoads/Everything.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_tool/toolUseWays/commonTool.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_notes/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/A_notes/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +29,7 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "D:/workspace/developer/idea_workspace_parent/learnJAVA/A_tool/toolDownLoads",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -52,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660699981230</updated>
       <workItem from="1660699982500" duration="4297000" />
-      <workItem from="1660710117567" duration="8583000" />
+      <workItem from="1660710117567" duration="12752000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1660710701565</created>
@@ -61,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660710701565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="11">
+      <created>1660722549443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660722549443</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
 </project>
