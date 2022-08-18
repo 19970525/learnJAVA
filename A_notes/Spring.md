@@ -33,7 +33,7 @@ ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 >ApplicationContext 接口有四个常用的实现类ClassPathXmlApplicationContext、FileSystemXmlApplicationContext、WebXmlApplicationContext（web应用程序的范围内）、AnnotationConfigApplicationContext（注解配置上下文）
 
 ---
-### 第二部分 注入 四种方式注入：set/constructor、cp命名空间、自动装配、注解
+### 第二部分 注入 五种方式注入：set/constructor、cp命名空间、内部bean、自动装配、注解
 1. Bean属性注入方式：property的set注入/p命名空间 construct构造器注入/c命名空间
 ```xml
 <!-- set方法注入bean的属性 -->
