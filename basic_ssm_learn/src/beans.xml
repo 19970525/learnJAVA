@@ -112,7 +112,7 @@
             <aop:before method="before" pointcut-ref="pointCutId"></aop:before>
             <aop:after method="after" pointcut-ref="pointCutId"></aop:after>
             <aop:after-returning method="afterReturn" pointcut-ref="pointCutId" returning="rt"></aop:after-returning>
-            <aop:after-throwing method="afterThrow" pointcut-ref="pointCutId" throwing="ex"></aop:after-throwing>
+            <aop:after-throwing method="afterThrow" pointcut-ref="pointCutId" throwing="exception"></aop:after-throwing>
             <aop:around method="around" pointcut-ref="pointCutId"></aop:around>
         </aop:aspect>
     </aop:config>

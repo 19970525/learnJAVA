@@ -18,6 +18,7 @@ public class StudyDao {
     private String thing;
 
     public String doThing() {
+        System.out.println("学习类："+this.getName()+this.getActive()+this.getThing());
         return "学习类："+this.getName()+this.getActive()+this.getThing();
     }
 

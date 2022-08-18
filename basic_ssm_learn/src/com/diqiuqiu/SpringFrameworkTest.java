@@ -54,9 +54,9 @@ public class SpringFrameworkTest {
 //        BuyShoesDao buyShoesBean = context.getBean("buyShoesBean", BuyShoesDao.class);
 //        System.out.println(buyShoesBean.toString());
 
+        //spring AOP
         StudyDao studyBean = context.getBean("studyBean", StudyDao.class);
-        String s = studyBean.doThing();
-        System.out.println(s.toString());
+        studyBean.doThing();
 
 
     }

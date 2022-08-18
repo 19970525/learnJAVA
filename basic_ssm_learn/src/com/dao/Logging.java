@@ -19,17 +19,17 @@ public class Logging {
     }
 
     public void afterReturn(Object rt) {
-        System.out.println("后置返回通知。。。。");
+        System.out.println("后置返回通知。。。。"+rt);
     }
 
-    public void afterThrow() {
+    public void afterThrow(Exception exception) {
         System.out.println("后置异常通知。。。。");
     }
 
     public void around(ProceedingJoinPoint pj) throws Throwable {
         System.out.println("环绕通知1111。。。。");
         Object proceed = pj.proceed();
-        System.out.println(proceed.toString());
+        System.out.println(proceed.toString()+"环绕里面的");
         System.out.println("环绕通知2222。。。。");
     }
 }
