@@ -33,7 +33,7 @@ ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 >ApplicationContext 接口有四个常用的实现类ClassPathXmlApplicationContext、FileSystemXmlApplicationContext、WebXmlApplicationContext（web应用程序的范围内）、AnnotationConfigApplicationContext（注解配置上下文）
 
 ---
-### 第二部分 注入
+### 第二部分 注入 四种方式注入：set/constructor、cp命名空间、自动装配、注解
 1. Bean属性注入方式：property的set注入/p命名空间 construct构造器注入/c命名空间
 ```xml
 <!-- set方法注入bean的属性 -->
@@ -49,9 +49,12 @@ ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 </bean>
 <bean name="personBean2" class="com.dao.PersonDao" c:name="diqiuqiu" c:messageDao-ref="messageBean2">
 </bean>
+<!-- 懒加载初始化、bean初始化执行方法、销毁执行方法 -->
+<bean id="studentBean" class="com.dao.StudentDao" p:name="diqiuqiu" lazy-init="true" init-method="init" destroy-method="destroy">
+</bean>
 ```
 
->bean的作用域（scope）： singleton（单例）、prototype（多例/原型）、request、session、global session（后三种只有WebApplicationContext环境才生效）
+>bean的作用域（scope）： singleton（单例）、prototype（多例/原型）、request、session、global session（后三种只有WebXmlApplicationContext环境才生效）
 
 >lazy-init（懒加载初始化）:只有要使用这个bean的时候，IOC容器才会去初始化bean实例
 
@@ -70,7 +73,7 @@ init-method="init" destroy-method="destroy" （值为bean实例对象中定义�
 ``` xml
 <bean id="buyCarBean" class="com.dao.BuyCatDao">
     <property name="carDao">
-        <bean id="carBean" class="com.dao.CarDao"></bean>
+        <bean class="com.dao.CarDao"></bean>
     </property>
 </bean>
 ```
@@ -134,7 +137,7 @@ init-method="init" destroy-method="destroy" （值为bean实例对象中定义�
 5. 注解注入方式：
 >开启注解<context:annotation-config></context:annotation-config>
 
->根据类型查找@Autowired 存在同类型的根据id查找@Qualifier("shoesInfoBean")<br/>
+>@Autowired根据类型查找 @Qualifier("shoesInfoBean")存在同类型的根据id查找<br/>
 根据id查找再根据类型查找@Resource(name = "shoesInfoBean")——JSR-250<br/>
 
 >塞入值@Value("19.9")
