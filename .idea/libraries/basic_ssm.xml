@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="basic_ssm">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/jarOfBasic/spring-beans-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/jarOfBasic/spring-context-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/jarOfBasic/spring-core-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/jarOfBasic/spring-expression-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/jarOfBasic/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/spring-framework-5.3.9/libs/spring-aop-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/spring-framework-5.3.9/libs/spring-aspects-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/aspectjweaver.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

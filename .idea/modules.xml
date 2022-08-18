@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic_ssm_learn/basic_ssm_learn.iml" filepath="$PROJECT_DIR$/basic_ssm_learn/basic_ssm_learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnJAVA.iml" filepath="$PROJECT_DIR$/learnJAVA.iml" />
     </modules>
   </component>

@@ -2,8 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a27a0c09-9e0a-4d2b-85c6-4cbcc1597c6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/basic_ssm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/basic_ssm_learn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/AddressDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/BuyCatDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/BuyShoesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/CarDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/IDCardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/Logging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/MessageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/PersonalInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/ShoesInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/SonMessageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/StudyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/diqiuqiu/SpringFrameworkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy/Advice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy/TargetInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy2/Advice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy2/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy2/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/proxy2/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_notes/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/A_notes/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,24 +48,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/developer/idea_workspace_parent/learnJAVA/A_tool/toolDownLoads&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/basicData/data/tool/springFramework使用jar包/aspectjweaver.jar",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\developer\idea_workspace_parent\learnJAVA\basic_ssm_learn\src" />
       <recent name="D:\workspace\developer\idea_workspace_parent\learnJAVA\A_tool\toolDownLoads" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringFrameworkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.diqiuqiu.SpringFrameworkTest" />
+      <module name="basic_ssm_learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.diqiuqiu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringFrameworkTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,7 +100,7 @@
       <workItem from="1660699982500" duration="4297000" />
       <workItem from="1660710117567" duration="13986000" />
       <workItem from="1660739547819" duration="5918000" />
-      <workItem from="1660783337848" duration="4607000" />
+      <workItem from="1660783337848" duration="6961000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1660710701565</created>
@@ -89,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660789455380</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="提交笔记">
+      <created>1660789998370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660789998370</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
