@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a27a0c09-9e0a-4d2b-85c6-4cbcc1597c6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_notes/git.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_notes/maven常用命令及使用方法.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_notes/tomcat.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_ssm_learn/src/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic_ssm_learn/src/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/Logging.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/Logging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/StudyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/dao/StudyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_ssm_learn/src/com/diqiuqiu/SpringFrameworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic_ssm_learn/src/com/diqiuqiu/SpringFrameworkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +77,7 @@
       <workItem from="1660699982500" duration="4297000" />
       <workItem from="1660710117567" duration="13986000" />
       <workItem from="1660739547819" duration="5918000" />
-      <workItem from="1660783337848" duration="13702000" />
+      <workItem from="1660783337848" duration="14732000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1660710701565</created>
@@ -150,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660793207954</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="提交笔记">
+      <created>1660808291838</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660808291838</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
