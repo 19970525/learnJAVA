@@ -183,16 +183,16 @@ public class Common {
     private Advice advice;
     public Object createProxy() {//生成代理对象
         TargetInterface pro = (TargetInterface) Proxy.newProxyInstance(target.getClass().getClassLoader(),
-        target.getClass().getInterfaces(),
-        new InvocationHandler() {
-            @Override
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-            advice.before();
-            Object invoke = method.invoke(target, args);
-            advice.after();
-            return invoke;
-            }
-        });
+            target.getClass().getInterfaces(),
+            new InvocationHandler() {
+                @Override
+                public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                advice.before();
+                Object invoke = method.invoke(target, args);
+                advice.after();
+                return invoke;
+                }
+            });
         return pro;
     }
     public void setTarget(Target target) {
