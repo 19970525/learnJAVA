@@ -1,3 +1,10 @@
+>maven仓库：本地仓库、中央仓库（远程仓库：阿里云、apache仓库）、私有仓库（公司私有仓库）
+
+>冲突解决思路：短路优先-第一声明者优先-覆盖优先
+
+>maven包依赖可见性：设置scope标签值为compile（编译时可见）、test（测试时可见）、provided（编译和测试时可见）、runtime（运行时可见）、system（系统可见） 
+
+maven命令：<br/>
 （1）**maven clean**
 
 > 清空target目录
