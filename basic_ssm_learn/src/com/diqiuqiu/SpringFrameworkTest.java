@@ -2,6 +2,7 @@ package com.diqiuqiu;
 
 import com.dao.StudyDao;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -13,7 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringFrameworkTest {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+//        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 //        BeanFactory context = new ClassPathXmlApplicationContext("beans.xml");
         //property的set注入方式
 //        MessageDao bean = context.getBean("messageBean", MessageDao.class);
@@ -54,6 +55,7 @@ public class SpringFrameworkTest {
 //        BuyShoesDao buyShoesBean = context.getBean("buyShoesBean", BuyShoesDao.class);
 //        System.out.println(buyShoesBean.toString());
 
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("beans.xml");
         //spring AOP
         StudyDao studyBean = context.getBean("studyBean", StudyDao.class);
         studyBean.doThing();

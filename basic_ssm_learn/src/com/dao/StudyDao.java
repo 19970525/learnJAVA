@@ -1,6 +1,7 @@
 package com.dao;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 /**
  * @author diqiuqiu
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
  * @Description TODO
  * @date 2022-07-17
  */
+@Component("studyBean")
 public class StudyDao {
 
     @Value("diqiuqiu")
