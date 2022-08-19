@@ -9,6 +9,7 @@
       <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/spring-framework-5.3.9/libs/spring-aop-5.3.9.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/spring-framework-5.3.9/libs/spring-aspects-5.3.9.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/aspectjweaver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../basicData/data/tool/springFramework使用jar包/spring-framework-5.3.9/libs/spring-test-5.3.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

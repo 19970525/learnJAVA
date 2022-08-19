@@ -297,3 +297,91 @@ advice（通知）：拦截连接点之后做的操作<br/>
 aspect（切面）：切入点+通知<br/>
 weaving（织入）：将切入点+通知结合产生代理对象的过程<br/>
 
+``` java
+public class Logging {//切面类
+
+    public void before() {
+        System.out.println("前置通知。。。。");
+    }
+
+    public void after() {
+        System.out.println("后置通知。。。。");
+    }
+
+    public void afterReturn(Object rt) {
+        System.out.println("后置返回通知。。。。"+rt);
+    }
+
+    public void afterThrow(Exception exception) {
+        System.out.println("后置异常通知。。。。");
+    }
+
+    public void around(ProceedingJoinPoint pj) throws Throwable {
+        System.out.println("环绕通知1111。。。。");
+        Object proceed = pj.proceed();
+        System.out.println(proceed.toString()+"环绕里面的");
+        System.out.println("环绕通知2222。。。。");
+    }
+}
+
+public class StudyDao {//目标类
+
+    @Value("diqiuqiu")
+    private String name;
+    @Value("学习")
+    private String active;
+    @Value("SpringFramework")
+    private String thing;
+
+    public String doThing() {
+        System.out.println("学习类："+this.getName()+this.getActive()+this.getThing());
+        return "学习类："+this.getName()+this.getActive()+this.getThing();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getActive() {
+        return active;
+    }
+
+    public String getThing() {
+        return thing;
+    }
+
+    @Override
+    public String toString() {
+        return "StudyDao{" +
+                "name='" + name + '\'' +
+                ", active='" + active + '\'' +
+                ", thing='" + thing + '\'' +
+                '}';
+    }
+}
+
+public class SpringFrameworkTest {//测试类
+
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        //spring AOP
+        StudyDao studyBean = context.getBean("studyBean", StudyDao.class);
+        studyBean.doThing();
+    }
+}
+```
+``` xml
+<!-- AOP面向切面编程 -->
+<bean id="studyBean" class="com.dao.StudyDao"></bean>
+<bean id="loggingBean" class="com.dao.Logging"></bean>
+<aop:config>
+    <aop:aspect ref="loggingBean">
+        <aop:pointcut id="pointCutId" expression="execution(public String com.dao.*.*(..))"/>
+        <aop:before method="before" pointcut-ref="pointCutId"></aop:before>
+        <aop:after method="after" pointcut-ref="pointCutId"></aop:after>
+        <aop:after-returning method="afterReturn" pointcut-ref="pointCutId" returning="rt"></aop:after-returning>
+        <aop:after-throwing method="afterThrow" pointcut-ref="pointCutId" throwing="exception"></aop:after-throwing>
+        <aop:around method="around" pointcut-ref="pointCutId"></aop:around>
+    </aop:aspect>
+</aop:config>
+```

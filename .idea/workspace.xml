@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a27a0c09-9e0a-4d2b-85c6-4cbcc1597c6c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/basic_ssm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/basic_ssm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_notes/maven常用命令及使用方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/A_notes/maven常用命令及使用方法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_notes/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/A_notes/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +37,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/workspace/developer/idea_workspace_parent/learnJAVA/A_notes/images",
+    "last_opened_file_path": "D:/basicData/data/tool/springFramework使用jar包/spring-framework-5.3.9/libs/spring-test-5.3.9.jar",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -81,7 +89,7 @@
       <workItem from="1660710117567" duration="13986000" />
       <workItem from="1660739547819" duration="5918000" />
       <workItem from="1660783337848" duration="16655000" />
-      <workItem from="1660869216697" duration="1921000" />
+      <workItem from="1660869216697" duration="5724000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1660710701565</created>
@@ -160,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660809454073</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="提交笔记">
+      <created>1660873220913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660873220913</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
