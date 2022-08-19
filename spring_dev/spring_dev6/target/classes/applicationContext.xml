@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userServiceImpl" class="org.cloudcore.service.UserServiceImpl"/>
+    <bean id="logBefore" class="org.cloudcore.log.LogBefore"/>
+    <bean id="logAfter" class="org.cloudcore.log.LogAfter"/>
+    <!-- AOP配置 方式一（没有自定义切面配置）-->
+    <aop:config>
+        <!-- 切点 execution(* 包名.类名.方法名(方法参数名)) -->
+        <aop:pointcut id="pointcut" expression="execution(* org.cloudcore.service.UserServiceImpl.*(..))"/>
+        <!-- 通知 -->
+        <aop:advisor advice-ref="logBefore" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="logAfter" pointcut-ref="pointcut"/>
+    </aop:config>
+
+    <!-- AOP配置 方式二（自定义切面配置）-->
+    <bean id="logAspect" class="org.cloudcore.log2.LogAspect"/>
+    <aop:config>
+        <aop:aspect ref="logAspect">
+            <aop:pointcut id="pointcut2" expression="execution(* org.cloudcore.service.UserServiceImpl.*(..))"/>
+            <aop:before method="before" pointcut-ref="pointcut2"/>
+            <aop:after method="after" pointcut-ref="pointcut2"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!-- AOP配置 方式三（注解） -->
+    <bean id="logAspect3" class="org.cloudcore.log3.LogAspect3"/>
+    <!-- 开启aop注解支持 -->
+    <aop:aspectj-autoproxy/>
+</beans>

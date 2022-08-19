@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="userDao" class="org.cloudcore.daodao.UserDaoImpl"/>
+    <bean id="orderDao" class="org.cloudcore.daodao.OrderDaoImpl"/>
+    <bean id="userService" class="org.cloudcore.service.UserServiceImpl" name="uuu" scope="singleton"><!-- id表示唯一标记,也可以用name -->
+<!--        <constructor-arg index="0" ref="userDao"/>&lt;!&ndash; 通过构造器传给实例对象值 &ndash;&gt;-->
+        <property name="userDAO" ref="userDao"/> <!-- 通过set方法传值 -->
+        <property name="orderDao" ref="orderDao"/> <!-- 通过set方法传值 -->
+
+        <property name="likes">
+            <array>
+                <value>打球</value>
+                <value>跑步</value>
+                <value>睡觉</value>
+            </array>
+        </property>
+    </bean>
+
+    <alias name="userService" alias="userService2"/><!-- 给标记起别名 -->
+
+</beans>

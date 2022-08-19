@@ -13,95 +13,95 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- set方法注入bean的属性 -->
-    <bean id="messageBean" class="com.dao.MessageDao">
-        <property name="message" value="信息量很大呀"></property>
-        <property name="messNum" value="232"></property>
-    </bean>
-    <bean name="messageBean2" class="com.dao.MessageDao" p:message="信息量很大呀">
-    </bean>
+<!--    <bean id="messageBean" class="com.dao.MessageDao">-->
+<!--        <property name="message" value="信息量很大呀"></property>-->
+<!--        <property name="messNum" value="232"></property>-->
+<!--    </bean>-->
+<!--    <bean name="messageBean2" class="com.dao.MessageDao" p:message="信息量很大呀">-->
+<!--    </bean>-->
 
     <!-- 构造器注入bean的属性 -->
-    <bean id="personBean" class="com.dao.PersonDao">
-        <constructor-arg name="name" value="diqiuqiu"></constructor-arg>
-        <constructor-arg name="messageDao" ref="messageBean"></constructor-arg>
-    </bean>
-    <bean name="personBean2" class="com.dao.PersonDao" c:name="diqiuqiu" c:messageDao-ref="messageBean2">
-    </bean>
+<!--    <bean id="personBean" class="com.dao.PersonDao">-->
+<!--        <constructor-arg name="name" value="diqiuqiu"></constructor-arg>-->
+<!--        <constructor-arg name="messageDao" ref="messageBean"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean name="personBean2" class="com.dao.PersonDao" c:name="diqiuqiu" c:messageDao-ref="messageBean2">-->
+<!--    </bean>-->
 
     <!-- 懒加载初始化、bean初始化执行方法、销毁执行方法 -->
-    <bean id="studentBean" class="com.dao.StudentDao" p:name="diqiuqiu" lazy-init="true" init-method="init" destroy-method="destroy">
-    </bean>
+<!--    <bean id="studentBean" class="com.dao.StudentDao" p:name="diqiuqiu" lazy-init="true" init-method="init" destroy-method="destroy">-->
+<!--    </bean>-->
 
     <!-- 继承父bean -->
-    <bean id="sonMessageBean" class="com.dao.SonMessageDao" parent="messageBean">
-        <property name="messNum" value="99"></property>
-        <property name="messPerson" value="yiqiu"></property>
-    </bean>
+<!--    <bean id="sonMessageBean" class="com.dao.SonMessageDao" parent="messageBean">-->
+<!--        <property name="messNum" value="99"></property>-->
+<!--        <property name="messPerson" value="yiqiu"></property>-->
+<!--    </bean>-->
 
     <!-- 内部bean写法 -->
-    <bean id="buyCarBean" class="com.dao.BuyCatDao">
-        <property name="carDao">
-            <bean class="com.dao.CarDao"></bean>
-        </property>
-    </bean>
+<!--    <bean id="buyCarBean" class="com.dao.BuyCatDao">-->
+<!--        <property name="carDao">-->
+<!--            <bean class="com.dao.CarDao"></bean>-->
+<!--        </property>-->
+<!--    </bean>-->
 
     <!-- 注入集合 -->
-    <bean id="addressBean" class="com.dao.AddressDao">
-        <property name="addressList">
-            <list>
-                <value>江苏</value>
-                <value>湖北</value>
-                <value>湖南</value>
-            </list>
-        </property>
-        <property name="addressSet">
-            <set>
-                <value>江苏</value>
-                <value>湖北</value>
-                <value>湖南</value>
-            </set>
-        </property>
-        <property name="addressMap">
-            <map>
-                <entry key="address1" value="江苏"></entry>
-                <entry key="address2" value="湖北"></entry>
-                <entry key="address3" value="湖南"></entry>
-            </map>
-        </property>
-        <property name="addressProps">
-            <props>
-                <prop key="address1">江苏</prop>
-                <prop key="address2">湖北</prop>
-                <prop key="address3">湖南</prop>
-            </props>
-        </property>
-    </bean>
+<!--    <bean id="addressBean" class="com.dao.AddressDao">-->
+<!--        <property name="addressList">-->
+<!--            <list>-->
+<!--                <value>江苏</value>-->
+<!--                <value>湖北</value>-->
+<!--                <value>湖南</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="addressSet">-->
+<!--            <set>-->
+<!--                <value>江苏</value>-->
+<!--                <value>湖北</value>-->
+<!--                <value>湖南</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="addressMap">-->
+<!--            <map>-->
+<!--                <entry key="address1" value="江苏"></entry>-->
+<!--                <entry key="address2" value="湖北"></entry>-->
+<!--                <entry key="address3" value="湖南"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--        <property name="addressProps">-->
+<!--            <props>-->
+<!--                <prop key="address1">江苏</prop>-->
+<!--                <prop key="address2">湖北</prop>-->
+<!--                <prop key="address3">湖南</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
 
     <!-- 自动装配注入 -->
-    <bean id="personalInfoBean" class="com.dao.PersonalInfoDao" autowire="byName">
-        <property name="userName" value="diqiuqiu"></property>
-    </bean>
-    <bean id="personalInfoBean2" class="com.dao.PersonalInfoDao" autowire="byType">
-        <property name="userName" value="diqiuqiu"></property>
-    </bean>
-    <bean id="idCardDao" class="com.dao.IDCardDao">
-        <property name="idNo" value="42068888888888888"></property>
-        <property name="idType" value="B01"></property>
-    </bean>
+<!--    <bean id="personalInfoBean" class="com.dao.PersonalInfoDao" autowire="byName">-->
+<!--        <property name="userName" value="diqiuqiu"></property>-->
+<!--    </bean>-->
+<!--    <bean id="personalInfoBean2" class="com.dao.PersonalInfoDao" autowire="byType">-->
+<!--        <property name="userName" value="diqiuqiu"></property>-->
+<!--    </bean>-->
+<!--    <bean id="idCardDao" class="com.dao.IDCardDao">-->
+<!--        <property name="idNo" value="42068888888888888"></property>-->
+<!--        <property name="idType" value="B01"></property>-->
+<!--    </bean>-->
 
-    <bean id="personBean3" class="com.dao.PersonDao" autowire="constructor">
-        <constructor-arg name="name" value="diqiuqiu"></constructor-arg>
-    </bean>
-    <bean id="messageDao" class="com.dao.MessageDao">
-        <property name="message" value="信息量很大啊！"></property>
-        <property name="messNum" value="999"></property>
-    </bean>
+<!--    <bean id="personBean3" class="com.dao.PersonDao" autowire="constructor">-->
+<!--        <constructor-arg name="name" value="diqiuqiu"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="messageDao" class="com.dao.MessageDao">-->
+<!--        <property name="message" value="信息量很大啊！"></property>-->
+<!--        <property name="messNum" value="999"></property>-->
+<!--    </bean>-->
 
     <!-- 使用注解注入 -->
     <context:annotation-config></context:annotation-config>
 
-    <bean id="buyShoesBean" class="com.dao.BuyShoesDao"></bean>
-    <bean id="shoesInfoBean" class="com.dao.ShoesInfoDao"></bean>
+<!--    <bean id="buyShoesBean" class="com.dao.BuyShoesDao"></bean>-->
+<!--    <bean id="shoesInfoBean" class="com.dao.ShoesInfoDao"></bean>-->
 
     <!-- AOP面向切面编程 -->
 <!--    <bean id="studyBean" class="com.dao.StudyDao"></bean>-->

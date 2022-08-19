@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:annotation-config/><!-- 使用注解一定要开启注解 -->
+
+    <bean id="userDao" class="org.cloudcore.daodao.UserDaoImpl"/>
+    <!-- 通过scope确定作用域 通过autowrite确定自动装填方式 -->
+    <bean id="userService" class="org.cloudcore.service.UserServiceImpl" name="uuu" scope="singleton">
+        <property name="likes">
+            <array>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </array>
+        </property>
+<!--        <property name="name" value="牛"></property>-->
+    </bean>
+
+    <alias name="userService" alias="userService2"/><!-- 给标记起别名 -->
+
+
+
+    <!--
+     @autowired和@Resource区别：
+     前者通过byType找,    多个类型相同导致找不到，可以再通过@Qualifier(value="")找名字
+     后者通过先通过byName找，找不到再通过byType找,   再找不到就报错
+     -->
+</beans>

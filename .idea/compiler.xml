@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring_dev1" />
+        <module name="Spring_dev8" />
+        <module name="spring_dev2" />
+        <module name="spring_dev10" />
+        <module name="spring_dev7" />
+        <module name="spring_dev9" />
+        <module name="spring_dev3" />
+        <module name="spring_dev4" />
+        <module name="spring_dev5" />
+        <module name="spring_dev6" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_dev" target="1.8" />
+      <module name="spring_dev1" target="1.8" />
+      <module name="spring_dev10" target="1.8" />
+      <module name="spring_dev2" target="1.8" />
+      <module name="spring_dev3" target="1.8" />
+      <module name="spring_dev4" target="1.8" />
+      <module name="spring_dev5" target="1.8" />
+      <module name="spring_dev6" target="1.8" />
+      <module name="spring_dev7" target="1.8" />
+      <module name="Spring_dev8" target="1.8" />
+      <module name="spring_dev9" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="spring-dao.xml"/>
+
+    <bean id="userDao" class="org.cloudcore.dao.UserDaoMapperImpl">
+<!--        <property name="seqSession" ref="sqlSession"/>-->
+        <!-- 省略SqlSessionTemplate的配置（通过继承SqlSessionDaoSupport类获取SqlSessionTemplate，这里直接注入seqSessionFactory对象） -->
+        <!-- 这里的seqSessionFactory是注入到了当前类的父类SqlSessionDaoSupport中，方便获取sqlSession对象 -->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+</beans>
