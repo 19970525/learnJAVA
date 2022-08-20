@@ -1,6 +1,6 @@
 package org.cloudcore.service;
 
-import org.cloudcore.daodao.UserDao;
+import org.cloudcore.ddao.UserDao;
 
 /**
  * @author pengjun

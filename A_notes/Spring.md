@@ -435,17 +435,47 @@ public class Logging {
     public void pointCut() {}
 }
 ```
+
+---
+### XML其他配置
+``` xml
+<!-- 导入其他配置文件 -->
+<import resource="spring-dao.xml"/>
+<!-- 导入properties文件 -->
+<context:property-placeholder location="classpath:dev.properties"/>
+```
 ---
 ### 注解篇
 >spring原注解
 > @Component、@Controller、@Service、@Repository、@Autowired、@Qualifier、@Resource、@Value、@Scope、@PostConstruct、@PreDestory
 
 ![img.png](images/basicAnnotion.png)
+![img.png](images/addNewAnnotion.png)
 
 >spring新注解
 > @configuration、ComponentScan、@Bean、@PropertySource、@Import
 
 ![img.png](images/newAnnotion.png)
+
+``` java
+//声明这是一个注解配置类
+@Configuration
+@ComponentScan("org.cloudcore")
+@PropertySource("classpath:dev.properties")
+//@Import(MysConfig2.class)
+public class MysConfig {
+
+    @Bean
+    public UserDaoImpl userDao(){
+        return new UserDaoImpl();
+    }
+
+    @Bean
+    public UserService userService(){
+        return new UserServiceImpl();
+    }
+}
+```
 ---
 ### 数据源（连接池）
 > 常见的数据源（连接池）：DBCP、C3P0、BoneCP、Druid等

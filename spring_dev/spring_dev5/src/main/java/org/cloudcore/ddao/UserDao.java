@@ -1,4 +1,4 @@
-package org.cloudcore.daodao;
+package org.cloudcore.ddao;
 
 /**
  * @author pengjun

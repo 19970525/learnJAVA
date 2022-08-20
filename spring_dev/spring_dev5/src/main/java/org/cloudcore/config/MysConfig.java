@@ -1,12 +1,12 @@
 package org.cloudcore.config;
 
-import org.cloudcore.daodao.UserDao;
-import org.cloudcore.daodao.UserDaoImpl;
+import org.cloudcore.ddao.UserDaoImpl;
 import org.cloudcore.service.UserService;
 import org.cloudcore.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * @author pengjun
@@ -14,11 +14,12 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan("org.cloudcore")
+@PropertySource("classpath:dev.properties")
 //@Import(MysConfig2.class)
 public class MysConfig {
 
     @Bean
-    public UserDao userDao(){
+    public UserDaoImpl userDao(){
         return new UserDaoImpl();
     }
 
