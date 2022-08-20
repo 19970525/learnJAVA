@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a27a0c09-9e0a-4d2b-85c6-4cbcc1597c6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_diarys/学习安排.md" beforeDir="false" afterPath="$PROJECT_DIR$/A_diarys/学习安排.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A_notes/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/A_notes/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +155,7 @@
       <workItem from="1660869216697" duration="17978000" />
       <workItem from="1660901989870" duration="142000" />
       <workItem from="1660902143601" duration="501000" />
-      <workItem from="1660963942017" duration="3600000" />
+      <workItem from="1660963942017" duration="5447000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1660710701565</created>
@@ -263,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660900699183</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="提交笔记">
+      <created>1660985149024</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660985149024</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

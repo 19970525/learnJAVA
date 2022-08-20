@@ -436,7 +436,16 @@ public class Logging {
 }
 ```
 ---
-### 数据源（连接池）
-> 常见的数据源（连接池）：DBCP、C3P0、BoneCP、Druid等
+### 注解篇
+>spring原注解
+> @Component、@Controller、@Service、@Repository、@Autowired、@Qualifier、@Resource、@Value、@Scope、@PostConstruct、@PreDestory
 
 ![img.png](images/basicAnnotion.png)
+
+>spring新注解
+> @configuration、ComponentScan、@Bean、@PropertySource、@Import
+
+![img.png](images/newAnnotion.png)
+---
+### 数据源（连接池）
+> 常见的数据源（连接池）：DBCP、C3P0、BoneCP、Druid等
