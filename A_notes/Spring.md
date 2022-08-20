@@ -35,7 +35,7 @@ ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 ---
 ### 第二部分 注入 五种方式注入：set/constructor、cp命名空间、内部bean、自动装配、注解
 1. Bean属性注入方式：property的set注入/p命名空间 construct构造器注入/c命名空间
-```xml
+``` xml
 <!-- set方法注入bean的属性 -->
 <bean id="messageBean" class="com.dao.MessageDao">
 	<property name="message" value="信息量很大呀"></property>
@@ -435,3 +435,8 @@ public class Logging {
     public void pointCut() {}
 }
 ```
+---
+### 数据源（连接池）
+> 常见的数据源（连接池）：DBCP、C3P0、BoneCP、Druid等
+
+![img.png](images/basicAnnotion.png)
