@@ -1,0 +1,9 @@
+# Project exclude paths
+/out/
+/springMVC_dev1/target/
+/springMVC_dev2/target/
+/springMVC_dev4/target/
+/springMVC_dev5/target/
+/springMVC_dev6/target/
+/springMVC_dev7/target/
+/springMVC_dev8/target/

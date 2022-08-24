@@ -1,3 +1,6 @@
+>之前老的servlet技术（JSP），通过servlet的实现类HttpServlet的doGet、doPost等方法接收请求
+> 上下文监听器：ServletContextListener类
+
 # 1.Spring MVC概念
 
 > MVC是模型(Model)、视图(View)、控制器(Controller)的简写，是一种软件设计规范
@@ -288,6 +291,7 @@ public class BatchTransferController {
 ```
 
 ### 3.请求参数处理注解：@RequestParam
+>当想要自定义参数名称可使用该注解，不自定义参数名称无需使用
 
 ```java
 @Controller
@@ -346,8 +350,19 @@ public class TransferFrom {
 >    - redirect:前端文件全路径  
 >    - 文件不要创建在WEB-INF目录下，否则重定向访问不到
 >    - 模板视图传递参数，页面接收不到
+> 
+> (//转发<br/>
+>return "hello";<br/>
+>//也可以写成return "forward:/WEB-INF/jsp/hello.jsp";<br/>
+>//注意：转发可以分为显式forward和不写forward，不写的时候会走视图解析器，<br/>
+>//写了的时候则不走视图解析器的！！<br/>
+>
+>//重定向：在返回的地址前加上 redirect:<br/>
+>// 重定向的话，代表浏览器重新访问服务器，不会走视图解析器。<br/>
+>// 因为浏览器没有权限访问web-inf目录，故如果重定向地址是在web-inf下的页面，则会报错<br/>
+>return "redirect:/index.jsp";)<br/>
 
-```java
+``` java
     //无需视图解析器
     @GetMapping("/transfer2")
     public String transfer2(Model model, @RequestParam("uname") String uname, @RequestParam("total") double total) {
@@ -442,7 +457,7 @@ public class TransferFrom {
 
 - 使用默认配置<mvc:annotation-driven />
 
-- ```java
+``` java
       @PostMapping("/transfer")
   	//@ResponseBody 			/*@ResponseBody也可以写在这里*/
       public @ResponseBody List<Users> transfer(@RequestBody Users users) {
@@ -468,7 +483,7 @@ public class TransferFrom {
 > **过滤器**
 >
 > - servlet规范中的一部分，任何java web工程都可以使用
-> - 在url-pattern中配置了/*之后，可以对所有要访问的资源进行拦截
+> - 在url-pattern中配置了/*之后，可以对所有要访问的资源进行过滤
 >
 > **拦截器** 
 >

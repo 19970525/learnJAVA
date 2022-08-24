@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/Spring_dev8/Spring_dev8.iml" filepath="$PROJECT_DIR$/spring_dev/Spring_dev8/Spring_dev8.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic_ssm_learn/basic_ssm_learn.iml" filepath="$PROJECT_DIR$/basic_ssm_learn/basic_ssm_learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnJAVA.iml" filepath="$PROJECT_DIR$/learnJAVA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev1/spring_dev1.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev1/spring_dev1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev10/spring_dev10.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev10/spring_dev10.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev2/spring_dev2.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev2/spring_dev2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev3/spring_dev3.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev3/spring_dev3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev4/spring_dev4.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev4/spring_dev4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev5/spring_dev5.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev5/spring_dev5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev6/spring_dev6.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev6/spring_dev6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev7/spring_dev7.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev7/spring_dev7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_dev/spring_dev9/spring_dev9.iml" filepath="$PROJECT_DIR$/spring_dev/spring_dev9/spring_dev9.iml" />
     </modules>
   </component>
 </project>

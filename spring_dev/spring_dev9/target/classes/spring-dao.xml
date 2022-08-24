@@ -17,7 +17,7 @@
         <!-- mybatis核心配置文件 -->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <!-- mybatis的mapper文件 -->
-        <property name="mapperLocations" value="classpath:org/cloudcore/dao/*.xml"/>
+        <property name="mapperLocations" value="classpath:org/cloudcore/daodao/*.xml"/>
     </bean>
 
     <!-- SqlSessionTemplate：实际就是原来mybatis使用的sqlSession -->

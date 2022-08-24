@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @ComponentScan("org.cloudcore")
-@PropertySource("classpath:dev.properties")
+//@PropertySource("classpath:dev.properties")
 //@Import(MysConfig2.class)
 public class MysConfig {
 

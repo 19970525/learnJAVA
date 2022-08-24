@@ -37,6 +37,14 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- spring测试依赖 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.21</version>
+            <scope>test</scope>
+        </dependency>
         <!-- mysql驱动包 -->
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
